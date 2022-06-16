@@ -2,7 +2,7 @@ const search = document.getElementById("search");
 const matchList = document.getElementById("match-list");
 
 const searchStates = async (searchText) => {
-  const res = await fetch("/data/main1.json");
+  const res = await fetch("main1.json");
   const states = await res.json();
 
   let matches = states.filter((state) => {
